@@ -3,7 +3,7 @@ name: macos-lcg
 on: [push, pull_request]
 
 jobs:
-  macos-10.15:
+  macos-1015:
     runs-on: macos-10.15
     strategy:
       fail-fast: false
@@ -20,4 +20,4 @@ jobs:
         release-platform: ${{ matrix.LCG }}
         run: |
           cmake -B build -S .
-          cmake --build build install
+          cmake --build build -- install
