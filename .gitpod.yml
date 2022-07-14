@@ -1,0 +1,17 @@
+image: ghcr.io/eic/jug_dev:testing
+
+github:
+  prebuilds:
+    master: true
+    branches: false
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: false
+    addComment: false
+    addBadge: true
+
+vscode:
+  extensions:
+    - "ms-vscode.cpptools-extension-pack"
+    - "redhat.vscode-yaml"
+    - "redhat.vscode-xml"
