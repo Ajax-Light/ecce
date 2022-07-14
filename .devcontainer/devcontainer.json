@@ -3,7 +3,7 @@
     "image": "ghcr.io/eic/jug_dev:testing",
 
     // Run commands after the container is created.
-    "postCreateCommand": "git clone https://github.com/eic/ecce.git ~/ecce",
+    //"postCreateCommand": "gcc -v",
 
     // Comment out the next line if you want to run as root instead
     //"remoteUser": "vscode",
