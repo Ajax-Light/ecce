@@ -15,3 +15,10 @@ vscode:
     - "ms-vscode.cpptools-extension-pack"
     - "redhat.vscode-yaml"
     - "redhat.vscode-xml"
+
+tasks:
+  - name: "Software Setup"
+    init: |
+      rm -rf /usr/local
+      ln -sf /usr/._local/* /usr/local
+    command: ddsim
